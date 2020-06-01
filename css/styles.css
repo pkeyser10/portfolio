@@ -649,8 +649,8 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 18.1637rem;
-	height: 2.5rem;
+    width: 14.531rem;
+	height: 2rem;
 	-webkit-backface-visibility: hidden;
 }
 
@@ -765,6 +765,12 @@ input[type='checkbox'] {
 /*********************/
 /*    04. Header     */
 /*********************/
+
+#hero-text {
+	font-size:1.6rem;
+}
+
+
 .header {
 	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('../images/halifax-2370263_1920.jpg') center center no-repeat;
 	background-size: cover;
