@@ -19,6 +19,11 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
+if (empty($_POST["terms"])) {
+    $errorMSG = "Terms is required ";
+} else {
+    $terms = $_POST["terms"];
+}
 
 $EmailTo = "admin@peterkeyser.ca";
 $Subject = "New message from peterkeyser.ca";
@@ -34,7 +39,9 @@ $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
-
+$Body .= "Terms: ";
+$Body .= $terms;
+$Body .= "\n";
 
 // send email
 $success = mail($EmailTo, $Subject, $Body, "From:".$email);
