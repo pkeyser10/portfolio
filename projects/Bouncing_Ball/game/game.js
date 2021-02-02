@@ -1,10 +1,10 @@
 var game;
 var gameOptions = {
     bounceHeight: 450,
-    ballGravity: 2000,
-    ballPower: 800,
-    obstacleSpeed: 350,
-    obstacleDistanceRange: [100, 250],
+    ballGravity: 800,
+    ballPower: 700,
+    obstacleSpeed: 200,
+    obstacleDistanceRange: [150, 350],
     localStorageName: 'game/bestballscore'
 }
 window.onload = function() {
